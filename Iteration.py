@@ -18,6 +18,8 @@ openai.api_key  = os.getenv('OPENAI_API_KEY')
 # Find the starting directory
 START_DIR = os.getcwd()
 
+ICON_FILE = os.path.join(START_DIR, "01 Nenebiker.ico")
+
 #----------------------------------  Global Variables  ----------------------------------#
 frames = []
 prompts = []
@@ -167,7 +169,7 @@ root = tk.Tk()
 root.title("ChatGPT")
 #root.resizable(0,0) # disable resizing the GUI
 root.geometry("550x680")
-root.iconbitmap("01 Nenebiker.ico")
+root.iconbitmap(ICON_FILE)
 
 
 #----------------------------------   Menus  ----------------------------------#
